@@ -1,0 +1,1 @@
+Colección de scripts SQL Server usados en entornos productivos para monitoreo, análisis de performance y mantenimiento. Enfocados en troubleshooting real y optimización de sistemas críticos.
