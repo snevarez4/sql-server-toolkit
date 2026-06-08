@@ -2,9 +2,9 @@
 
 > Scripts I use when something breaks in production.
 
-Collection of SQL Server scripts used in real-world environments for monitoring, troubleshooting, performance analysis, maintenance, and database documentation.
+Collection of SQL Server scripts used in real-world environments for monitoring, troubleshooting, performance analysis, maintenance, database documentation, and stored procedure governance.
 
-This repository is focused on practical SQL Server operations in production-oriented systems, especially environments where reliability, diagnostics, and maintainability matter.
+The repository combines production-ready operational scripts with documentation and metadata frameworks designed to improve maintainability, traceability, and knowledge preservation in SQL Server environments.
 
 Many of these scripts were created or adapted while working with financial and transactional systems.
 
@@ -16,7 +16,7 @@ Scripts are organized by operational purpose instead of object type.
 
 ## documentation/
 
-Database documentation and metadata enrichment.
+Database documentation, metadata enrichment, and stored procedure documentation frameworks.
 
 | Script                       | Description                                                             |
 | ---------------------------- | ----------------------------------------------------------------------- |
@@ -24,6 +24,10 @@ Database documentation and metadata enrichment.
 | column_descriptions.sql      | Retrieves existing column descriptions                                  |
 | data_dictionary.sql          | Generates a basic database dictionary                                   |
 | enriched_data_dictionary.sql | Extended data dictionary including PK/FK relationships and descriptions |
+
+| Folder / Script | Description                                              |
+| --------------- | -------------------------------------------------------- |
+| inventory/      | Stored Procedure Documentation & Change Tracking Toolkit |
 
 ---
 
@@ -104,6 +108,33 @@ Storage usage and capacity analysis.
 
 ---
 
+# 📚 Documentation Frameworks
+
+The repository includes initiatives focused on improving documentation quality and change traceability in legacy SQL Server environments.
+
+## Stored Procedure Documentation & Change Tracking Toolkit
+
+This toolkit leverages structured comments embedded inside stored procedures to build:
+
+- Procedure inventories
+- Documentation coverage reports
+- Application ownership mapping
+- Change tracking foundations
+- Documentation quality audits
+
+Current implementation focuses on XML v1 extraction using metadata stored inside procedure definitions.
+
+Future versions will introduce XML v2, enabling:
+
+- Structured change classification
+- Ticket tracking
+- Native XML parsing
+- Documentation dashboards
+- Technical debt analytics
+
+Location:
+documentation/inventory/
+
 # 🧠 Design Principles
 
 Most scripts follow these principles:
@@ -166,6 +197,10 @@ Planned future additions:
 - Data governance utilities
 - ETL-oriented scripts
 - Data quality validations
+- XML v2 Stored Procedure Documentation Standard
+- ChangeLog extraction and analytics
+- Documentation quality auditing
+- Documentation coverage dashboards
 
 ---
 
